@@ -43,13 +43,11 @@ group :development, :test do
 
   #Use minitest-reporters to swap out the Minitest runner to the custom one used by minitest-reporters
   gem 'minitest-reporters', '1.0.5'
-
-  # Use Unicorn as the app server
-  gem 'unicorn', '4.8.3'
 end
 
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
+  gem 'unicorn', '4.8.3'
 end
 
