@@ -17,6 +17,29 @@ html {
 
 body {
 	padding-top: 80px;
+  background-image: image-url('sunset.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.row {
+  width: 100%;
+  display:flex;
+  
+}
+.col-1{
+  width: 50%;
+}
+
+.desc{
+  color: white;
+}
+
+.body-bkgr{
+  background-color:#ebebe0;
+  background-size: 100%;
+  height:100%;
+
 }
 
 section {
