@@ -3,9 +3,7 @@
 <body>
 <div class="row">
 	<div class="abc">
-		<video width="320" height="240" controls class="fullscreen-bg__video">
-			<%= video_tag "videoprueba.mp4", :size => "320x240", :controls => true %>
-		</video>
+		<%= video_tag "videoprueba.ogg" , :autoplay => true , :loop => true%>
 	</div>
 	
 </div>
@@ -15,7 +13,7 @@
 <div id="about">
 	<div class="row main">
 		<%= render 'layouts/header' %>
-		<div class="about-bkgr"> 
+		<div class="about-bkgr" style="margin-top:75px;"> 
 
 		</div>
 
@@ -50,4 +48,18 @@
 
 </div>
 
+<script >
+		function yscroll(){
+			var pagetop = document.getElementById("land-head");
+			var ypos = window.pageYOffset;
+			if(ypos > 100){
+				pagetop.style.display = "inherit";
+				
+			}
+			else{
+				pagetop.style.display = "none";
+			}
+		}
 
+		window.addEventListener("scroll", yscroll);
+	</script>
