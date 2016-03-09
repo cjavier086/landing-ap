@@ -1,9 +1,10 @@
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
+
 <body>
 <div class="row">
 	<div class="abc">
-		
+		<%= video_tag "videoprueba.ogg" , :autoplay => true , :loop => true%>
 	</div>
-	
 </div>
 
 </body>
@@ -11,12 +12,9 @@
 <div id="about">
 	<div class="row main">
 		<%= render 'layouts/header' %>
-		<div class="about-bkgr"> 
-
+		<div class="about-bkgr" style="margin-top:75px;"> 
 		</div>
-
-
-	</div>	
+	</div>
 </div>
 
 <div id="how">
@@ -69,4 +67,18 @@
 
 </div>
 
+<script >
+		function yscroll(){
+			var pagetop = document.getElementById("land-head");
+			var ypos = window.pageYOffset;
+			if(ypos > 100){
+				pagetop.style.display = "inherit";
+				
+			}
+			else{
+				pagetop.style.display = "none";
+			}
+		}
 
+		window.addEventListener("scroll", yscroll);
+</script>
