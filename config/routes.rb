@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :contacts
+
   get 'sessions/new'
 
   get 'session/new'
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
   get 'login'   => 'sessions#new'
   post 'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+  get 'contacts' => 'contacts#new'
 
   resources :users
 
