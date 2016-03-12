@@ -1,4 +1,4 @@
-Contacto
+<h2 class="separator">Contacto</h2> 
 <%= form_for(@contact == nil ? (@contact = Contact.new ) : @contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
@@ -29,10 +29,14 @@ Contacto
    </div>
 
   <div class="form-group">
-    <div class="col-lg-4"></div>
-    <div class="col-lg-4 edit-link">
+    <div class="col-md-4 col-md-offset-4 edit-link">
       <%= submit_tag("Enviar", disable_with: "Guardando", class: "btn btn-default edit-button")%>
-    <div class="col-lg-4"></div>
+  </div>
+
+  <div class="form-group col-md-4 col-md-offset-4 share">
+    <h2>Síguenos en <%= link_to image_tag("fb.png", alt: "Compartir en Facebook"),
+            'https://www.facebook.com/Movivan-427637314086247/?fref=ts' %> <%= link_to image_tag("youtube.png", alt: "Compartir en Youtube"),
+            'https://www.youtube.com/channel/UCpfPdw3w9xLHahhlqNVrnbw?app=desktop' %></h2>
   </div>
 
 <% end %>

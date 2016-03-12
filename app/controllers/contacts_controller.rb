@@ -25,18 +25,13 @@ class ContactsController < ApplicationController
   # POST /contacts.json
   def create
     @contact = Contact.new(contact_params)
-    ContactMailer.get_contact(@contact).deliver
-        flash[:success] = "Muchas gracias por inscribirte a este curso. Dentro de unos minutos se le estará enviando
-                            un correo donde se le indicará los datos necesarios para realizar el pago respectivo."
-    respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
-        format.json { render :show, status: :created, location: @contact }
+        ContactMailer.get_contact(@contact).deliver
+        redirect_to root_path
       else
         format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
-    end
   end
 
   # PATCH/PUT /contacts/1
