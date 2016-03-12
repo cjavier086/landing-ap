@@ -1,0 +1,38 @@
+Contacto
+<%= form_for(@contact == nil ? (@contact = Contact.new ) : @contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% @contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+ <div class="cont-label">
+   <h1>Escríbenos y con gusto nos contactaremos contigo en la brevedad.</h1>
+ </div>
+
+  <div class="form-group">
+     <div class="col-lg-4">
+       <%= f.text_field :name, :placeholder => "nombre", class: "form-control" %>
+     </div>
+     <div class="col-lg-4">
+       <%= f.text_field :email, :placeholder => "correo", class: "form-control" %>
+     </div>
+     <div class="col-lg-4">
+       <%= f.text_field :phone, :placeholder => "celular", class: "form-control" %>
+     </div>
+   </div>
+
+  <div class="form-group">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4 edit-link">
+      <%= submit_tag("Enviar", disable_with: "Guardando", class: "btn btn-default edit-button")%>
+    <div class="col-lg-4"></div>
+  </div>
+
+<% end %>
