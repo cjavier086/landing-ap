@@ -3,7 +3,7 @@
 <body>
 <div class="row">
 	<div class="abc">
-		<%= video_tag "videoprueba.ogg" , :autoplay => true, :muted => true%>
+		<%= video_tag "videoprueba.ogg" , :autoplay => true, :muted => true, class:"fullscreen-bg__video" %>
 	</div>
 </div>
 
@@ -100,7 +100,7 @@
 		function yscroll(){
 			var pagetop = document.getElementById("land-head");
 			var ypos = window.pageYOffset;
-			if(ypos > 100){
+			if(ypos > 40){
 				pagetop.style.display = "inherit";
 				
 			}

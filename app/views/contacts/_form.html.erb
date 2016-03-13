@@ -1,4 +1,3 @@
-Contacto
 <%= form_for(@contact == nil ? (@contact = Contact.new ) : @contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">

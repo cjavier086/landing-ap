@@ -1,9 +1,14 @@
+
+
 <header class="navbar navbar-fixed-top navbar-inverse navbar-nav" id="land-head" style="background-color:#ebebe0;display:none;">
   <div class="container">
     <%= link_to "Movivan", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li class="li-head"><%= link_to "¿Qué es Movivan?", "#about", :onclick => "document.getElementById('login').style.backgroundColor = '#ff0066'; document.getElementById('sign').style.backgroundColor = '#ff0066'"  %></li>
+        <li class="li-head">
+          <%= link_to "¿Cómo funciona?", "#about", :onclick => "document.getElementById('login').style.backgroundColor = '#ff0066'; document.getElementById('sign').style.backgroundColor = '#ff0066'" %>
+
+        </li>
         <li class="li-head"><%= link_to "¿Cómo funciona?", "#how", :onclick => "document.getElementById('login').style.backgroundColor = '#660066'; document.getElementById('sign').style.backgroundColor = '#660066'" %></li>
         <li class="li-head"><%= link_to "Beneficios", "#benefic", :onclick => "document.getElementById('login').style.backgroundColor = '#0000cc'; document.getElementById('sign').style.backgroundColor = '#0000cc'" %></li>
         <li class="li-head"><%= link_to "Contáctanos", "#contact" %></li>
