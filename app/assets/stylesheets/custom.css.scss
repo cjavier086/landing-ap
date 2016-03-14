@@ -55,14 +55,14 @@ body {
 }
 
 .abc {
-
+  background-color:black;
   display: block;  
   right: 0; 
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
   width: 100wh;   
-  height: auto;  
+  height: 100vh;  
   z-index: 1;
   margin: 0 auto;
   object-fit: cover;
