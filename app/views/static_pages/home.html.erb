@@ -1,15 +1,14 @@
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
 
-<body>
-<div class="row">
+<div class="fullpage-home">
+
+<div class="row section">
 	<div class="abc">
 		<%= video_tag "videoprueba.ogg" , :autoplay => true, :muted => true, class:"fullscreen-bg__video" %>
 	</div>
 </div>
 
-</body>
-
-<div id="about">
+<div class="about section">
 	<div class="row main">
 		<%= render 'layouts/header' %>
 		<div class="how-main" style="margin-top:75px;">
@@ -23,52 +22,52 @@
 	</div>
 </div>
 
-<div id="how">
+<div class="how section">
 	<div class="row main">
-		<div class="how-main" >
+		<div class="how-main wow fadeInUp" >
 			<div class="how-bkgr">
 			</div>
 		</div>
-		<div class="how-text">
+		<div class="how-text wow fadeInUp">
 			<h1>1. Viaje</h1>
 			<h2>Selecciona tus rutas de ida y vuelta segun tus viajes.</h2>
 		</div>
 	</div>
 </div>
 
-<div id="how">
+<div class="how section">
 	<div class="row main">
-		<div class="how-main" >
-			<div class="how1-bkgr">
-			</div>
+		<div class="how-main wow fadeInUp" >
+			<section class="how1-bkgr">
+			</section>
 		</div>
-		<div class="how-text">
+		<div class="how-text wow fadeInUp">
 			<h1>2. Programación</h1>
 			<h2>Selecciona los dias en que viajaremos contigo.</h2>
 		</div>
 	</div>
 </div>
 
-<div id="how">
+<div class="how section">
 	<div class="row main">
-		<div class="how-main" >
+		<div class="how-main wow fadeInUp" >
 			<div class="how2-bkgr">
 			</div>
 		</div>
-		<div class="how-text">
+		<div class="how-text wow fadeInUp">
 			<h1>3. Confirmación</h1>
 			<h2>Espera la confirmación de tus viajes programados.</h2>
 		</div>
 	</div>
 </div>
 
-<div id="how">
+<div class="how section">
 	<div class="row main">
-		<div class="how-main" >
+		<div class="how-main wow fadeInUp" >
 			<div class="how3-bkgr">
 			</div>
 		</div>
-		<div class="how-text">
+		<div class="how-text wow fadeInUp">
 			<h1>4. Mis viajes</h1>
 			<h2>Disfruta de tus viajes confirmados.</h2>
 		</div>
@@ -76,7 +75,7 @@
 </div>
 
 
-<div id="benefic">
+<div class="benefic section">
 	<div class="row main">
 		<div class="benefits"> 
 			<div class="ben-bkgr">
@@ -86,14 +85,16 @@
 	</div>
 </div>
 
-<div class="contact">
+<div class="contact section">
 	<div class="cont-bkgr">
 		<div class="cont-text"></div>
 	</div>
-	<div class="cont-form" >
+	<div class="cont-form wow bounce" >
 		<div class="cont-input"><%= render '/contacts/form' %></div>
 	</div>
 	</div>
+</div>
+
 </div>
 
 <script >
@@ -111,3 +112,4 @@
 
 		window.addEventListener("scroll", yscroll);
 </script>
+
