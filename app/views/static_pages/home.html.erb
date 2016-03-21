@@ -103,7 +103,7 @@
 		function yscroll(){
 			var pagetop = document.getElementById("land-head");
 			var ypos = window.pageYOffset;
-			if(ypos > screen.height - 150){
+			if(ypos > screen.height - 200){
 				pagetop.style.display = "inherit";
 				
 			}
@@ -121,7 +121,7 @@
 window.sr = ScrollReveal({ reset: true });
 
 // Customizing a reveal set
-sr.reveal('.bar', { distance: '200px' });
+sr.reveal('.bar', { distance: '200px', useDelay: 'once', delay: 350 });
 
 });
 </script>
