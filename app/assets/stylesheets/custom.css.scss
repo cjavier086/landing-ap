@@ -233,7 +233,7 @@ body {
 
 .cont-bkgr{
   width: 100vw;
-  height: 65vh;
+  height: 62vh;
   background-color: clear;
   margin: auto;
     top:0;bottom:0;
@@ -248,7 +248,7 @@ body {
     height: 30%; /* ratio = 9/16 * 90 = 50.625  0.38* 90*/
   max-height: 50%;
     max-width: 200%; /* 16/9 * 90 = 160  2.60 * 90 */
-    margin-top: 350px;
+    margin-top: 300px;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
@@ -259,7 +259,7 @@ body {
   width: 100vw;
   height: 35vh;
   background-color:$gray;
-  margin-top: 200px;
+  margin-top: 0px;
     top:0;bottom:0;
     left:0;right:0;
 }
@@ -270,6 +270,11 @@ body {
     text-align: center;
     font-size: 1.4em;
   }
+}
+
+.cont-input {
+  margin-right: 80px;
+  margin-left: 80px;
 }
 
 .share {
