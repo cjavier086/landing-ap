@@ -2,10 +2,12 @@
 
 <header class="navbar navbar-fixed-top navbar-inverse navbar-nav" id="land-head" style="background-color:#ebebe0;display:none;">
   <div class="container">
-    <%= link_to "Movivan", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li class="li-head">
+      <li class="li-head">
+        <%= link_to image_tag("logoMovivan.png", alt: "Imagen del Curso", size:"120x19") %>
+      </li>
+       <li class="li-head">
           <%= link_to "¿Qué es movivan?", "#about", :onclick => "document.getElementById('login').style.backgroundColor = '#ff0066'; document.getElementById('sign').style.backgroundColor = '#ff0066'" %>
 
         </li>
