@@ -24,11 +24,11 @@
 
 <div class="how section">
 	<div class="row main">
-		<div class="how-main wow fadeInUp" >
+		<div class="how-main bar fadeInUp" >
 			<div class="how-bkgr">
 			</div>
 		</div>
-		<div class="how-text wow fadeInUp">
+		<div class="how-text bar fadeInUp">
 			<h1>1. Viaje</h1>
 			<h2>Selecciona tus rutas de ida y vuelta segun tus viajes.</h2>
 		</div>
@@ -37,11 +37,11 @@
 
 <div class="how section">
 	<div class="row main">
-		<div class="how-main wow fadeInUp" >
+		<div class="how-main bar fadeInUp" >
 			<section class="how1-bkgr">
 			</section>
 		</div>
-		<div class="how-text wow fadeInUp">
+		<div class="how-text bar fadeInUp">
 			<h1>2. Programación</h1>
 			<h2>Selecciona los dias en que viajaremos contigo.</h2>
 		</div>
@@ -50,11 +50,11 @@
 
 <div class="how section">
 	<div class="row main">
-		<div class="how-main wow fadeInUp" >
+		<div class="how-main bar fadeInUp" >
 			<div class="how2-bkgr">
 			</div>
 		</div>
-		<div class="how-text wow fadeInUp">
+		<div class="how-text bar fadeInUp">
 			<h1>3. Confirmación</h1>
 			<h2>Espera la confirmación de tus viajes programados.</h2>
 		</div>
@@ -63,11 +63,11 @@
 
 <div class="how section">
 	<div class="row main">
-		<div class="how-main wow fadeInUp" >
+		<div class="how-main bar fadeInUp" >
 			<div class="how3-bkgr">
 			</div>
 		</div>
-		<div class="how-text wow fadeInUp">
+		<div class="how-text bar fadeInUp">
 			<h1>4. Mis viajes</h1>
 			<h2>Disfruta de tus viajes confirmados.</h2>
 		</div>
@@ -85,14 +85,16 @@
 	</div>
 </div>
 
-<div class="contact section">
+<div class="section">
+<div class="contact">
 	<div class="cont-bkgr">
 		<div class="cont-text"></div>
 	</div>
-	<div class="cont-form wow bounce" >
+	<div class="cont-form bar bounce" >
 		<div class="cont-input"><%= render '/contacts/form' %></div>
 	</div>
 	</div>
+
 </div>
 
 </div>
@@ -101,7 +103,7 @@
 		function yscroll(){
 			var pagetop = document.getElementById("land-head");
 			var ypos = window.pageYOffset;
-			if(ypos > 40){
+			if(ypos > screen.height - 200){
 				pagetop.style.display = "inherit";
 				
 			}
@@ -111,5 +113,16 @@
 		}
 
 		window.addEventListener("scroll", yscroll);
+</script>
+
+<script >
+	$(document).ready(function() {
+  	// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
+
+// Customizing a reveal set
+sr.reveal('.bar', { distance: '200px', useDelay: 'once', delay: 250 });
+
+});
 </script>
 
