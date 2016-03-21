@@ -4,11 +4,11 @@
 
 <div class="row section">
 	<div class="abc">
-		<%= video_tag "videoprueba.ogg" , :autoplay => true, :muted => true, class:"fullscreen-bg__video" %>
+		<%= video_tag "videolanding.ogv" , :autoplay => true, :muted => true, :loop => true, class:"fullscreen-bg__video" %>
 	</div>
 </div>
 
-<div class="about section">
+<div class="about section" id="about">
 	<div class="row main">
 		<%= render 'layouts/header' %>
 		<div class="how-main" style="margin-top:75px;">
@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-<div class="how section">
+<div class="how section" id="how">
 	<div class="row main">
 		<div class="how-main bar fadeInUp" >
 			<div class="how-bkgr">
@@ -75,7 +75,7 @@
 </div>
 
 
-<div class="benefic section">
+<div class="benefic section" id="benefic">
 	<div class="row main">
 		<div class="benefits"> 
 			<div class="ben-bkgr">
@@ -86,7 +86,7 @@
 </div>
 
 <div class="section">
-<div class="contact">
+<div class="contact" id="contact">
 	<div class="cont-bkgr">
 		<div class="cont-text"></div>
 	</div>
