@@ -226,12 +226,12 @@ body {
   height: 100vh;
   position: relative;
   margin-left: -15px;
-  margin-bottom: -2000px;
+  background-color: $gray;
 }
 
 .cont-bkgr{
   width: 100vw;
-  height: 62vh;
+  height: 62%;
   background-color: clear;
   margin: auto;
     top:0;bottom:0;
@@ -255,9 +255,9 @@ body {
 .cont-form {
   background-size: 100% 100%;
   width: 100vw;
-  height: 38vh;
+  height: 38%;
   background-color:$gray;
-  margin: auto;
+  margin-top: 40px;
     top:0;bottom:0;
     left:0;right:0;
 }

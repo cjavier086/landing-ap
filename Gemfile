@@ -27,7 +27,7 @@ gem 'bcrypt', '3.1.7'
 gem 'mysql2', '~> 0.3.14'
 gem 'animate.css-rails', '~> 3.2.0'
 gem 'wow-rails'
-
+gem 'rails-dev-tweaks', '~> 1.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
