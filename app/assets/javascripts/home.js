@@ -8,7 +8,7 @@ $(document).ready(function() {
     css3: true,
      scrollingSpeed: 1000,
         autoScrolling: true,
-        fitToSection: true,
+        fitToSection: false,
         fitToSectionDelay: 1000,
         scrollBar: true,
         easing: 'easeInOutCubic',
