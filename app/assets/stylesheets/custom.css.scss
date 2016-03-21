@@ -246,7 +246,7 @@ body {
     height: 30%; /* ratio = 9/16 * 90 = 50.625  0.38* 90*/
   max-height: 50%;
     max-width: 200%; /* 16/9 * 90 = 160  2.60 * 90 */
-    margin-top: 300px;
+    margin-top: 250px;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
@@ -257,7 +257,7 @@ body {
   width: 100vw;
   height: 38%;
   background-color:$gray;
-  margin-top: 40px;
+  margin-top: -20px;
     top:0;bottom:0;
     left:0;right:0;
 }
