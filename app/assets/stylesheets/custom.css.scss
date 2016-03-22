@@ -12,6 +12,13 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url('CaviarDreams.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
 	overflow-y: scroll;
 }
@@ -190,13 +197,15 @@ body {
   h1 {
     color:#693B7A;
     text-align: left;
-    font-size: 2.3em;
+    font-size: 2.4em;
+    font-family: 'CaviarDreams';
   }
   h2 {
     color:#693B7A;
     margin-top: -20px;
     text-align: left;
-    font-size: 1.4em; 
+    font-size: 1.5em; 
+    font-family: 'CaviarDreams';
     }
 }
 
