@@ -10,6 +10,7 @@
   <%= render 'layouts/shim' %>
 </head>
 <body>
+  <%= render 'layouts/postulationheader' if @postulation_page%>
 	<div class="container">
 	    <% flash.each do |message_type, message| %>
           <div class="alert alert-<%= message_type %>"><%= message %></div>

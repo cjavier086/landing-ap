@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @postulation.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @postulation.email %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @postulation.lastName %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @postulation.phone %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @postulation.owner %>
+</p>
+
+<%= link_to 'Edit', edit_postulation_path(@postulation) %> |
+<%= link_to 'Back', postulations_path %>

@@ -11,5 +11,9 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def postulation
+  	@postulation_page = true
+  end
   
 end
