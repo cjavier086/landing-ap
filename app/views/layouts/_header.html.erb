@@ -5,15 +5,19 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
       <li class="li-head">
-        <%= link_to image_tag("logo.png", alt: "Imagen del Curso", size:"120x19") %>
+        <%= link_to image_tag("logo.png", alt: "Imagen del Curso", size:"120x19"), "#video"%>
       </li>
        <li class="li-head">
-          <%= link_to "¿Qué es movivan?", "#about", :onclick => "document.getElementById('login').style.backgroundColor = '#ff0066'; document.getElementById('sign').style.backgroundColor = '#ff0066'" %>
-
+          <%= link_to "¿Qué es movivan?", "#about", :onclick => "document.getElementById('login').style.backgroundColor = '#ff0066'; document.getElementById('sign').style.backgroundColor = '#ff0066'; document.getElementById('contact').style.borderRight = 'solid 2px #ff0066'" %>
         </li>
-        <li class="li-head"><%= link_to "¿Cómo funciona?", "#how", :onclick => "document.getElementById('login').style.backgroundColor = '#660066'; document.getElementById('sign').style.backgroundColor = '#660066'" %></li>
-        <li class="li-head"><%= link_to "Beneficios", "#benefic", :onclick => "document.getElementById('login').style.backgroundColor = '#0000cc'; document.getElementById('sign').style.backgroundColor = '#0000cc'" %></li>
-        <li class="li-head"><%= link_to "Contáctanos", "#contact" %></li>
+
+        <li class="li-head"><%= link_to "¿Cómo funciona?", "#how", :onclick => "document.getElementById('login').style.backgroundColor = '#660066'; document.getElementById('sign').style.backgroundColor = '#660066'; document.getElementById('contact').style.borderRight = 'solid 2px #660066'" %>
+        </li>
+
+        <li class="li-head"><%= link_to "Beneficios", "#benefic", :onclick => "document.getElementById('login').style.backgroundColor = '#0000cc'; document.getElementById('sign').style.backgroundColor = '#0000cc'; document.getElementById('contact').style.borderRight = 'solid 2px #0000cc'" %></li>
+
+        <li class="li-head" id="contact" style="border-right:solid 2px gray; left:-12px;"><%= link_to "Contáctanos", "#contact" %></li>
+
         <li class="but-head" id="login"><%= link_to "Ingresa", "http://www.movivan.pe/auth/login" %></li>
         <li class="but-head" id="sign"><%= link_to "Registra tu van", '/postulation'%></li>
       </ul>
