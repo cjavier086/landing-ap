@@ -26,15 +26,13 @@ class PostulationsController < ApplicationController
   def create
     @postulation = Postulation.new(postulation_params)
 
-    respond_to do |format|
       if @postulation.save
-        format.html { redirect_to @postulation, notice: 'Postulation was successfully created.' }
-        format.json { render :show, status: :created, location: @postulation }
+        redirect_to '/postulation'
+       
       else
         format.html { render :new }
         format.json { render json: @postulation.errors, status: :unprocessable_entity }
       end
-    end
   end
 
   # PATCH/PUT /postulations/1
