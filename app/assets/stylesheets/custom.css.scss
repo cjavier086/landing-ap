@@ -315,7 +315,7 @@ body {
 
 .cont-bkgr{
   width: 100vw;
-  height: 62%;
+  height: 70%;
   background-color: clear;
   margin: auto;
     top:0;bottom:0;
@@ -330,7 +330,6 @@ body {
     height: 30%; /* ratio = 9/16 * 90 = 50.625  0.38* 90*/
   max-height: 50%;
     max-width: 200%; /* 16/9 * 90 = 160  2.60 * 90 */
-    margin-top: 250px;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
@@ -339,32 +338,36 @@ body {
 .cont-form {
   background-size: 100% 100%;
   width: 100vw;
-  height: 38%;
+  height: 30%;
   background-color:$gray;
-  margin-top: -20px;
+  margin-top: 0px;
     top:0;bottom:0;
     left:0;right:0;
 }
 
 .cont-label {
+padding-top:12px;
   h1 {
     color: white;
     text-align: center;
     font-size: 1.4em;
+    font-family: 'CaviarDreams';
   }
 }
 
 .cont-input {
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .share {
-  margin-bottom: -50px;
+margin-top: -20px;
+  margin-bottom: 0px;
   h2 {
     color:white;
     text-align:center;
-    font-size:1.0em;
+    font-size:1.2em;
+    font-family: 'CaviarDreams';
   }
 }
 
@@ -548,7 +551,6 @@ aside {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
 }
@@ -595,6 +597,7 @@ input {
    color: #00DD00;
    font-size: 16px;
    font-weight: bold;
+   font-family: 'CaviarDreams';
   }
 
   .send {
@@ -602,6 +605,7 @@ input {
    background-color:#0074E7;
    font-family: 'CaviarDreams';
    margin-top:15px;
+   width:100%
   }
 
   .navbarpost {
@@ -655,8 +659,20 @@ input {
       font-family: 'CaviarDreams';
       font-size: 14px;
       text-align:left;
+      display:block;
+}
+
+.contact-inputs {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-row {
+  width: 24%;
   display: inline-block;
 }
 
-
-
+.contact-button {
+  width: 5%;
+display: inline-block;
+}
