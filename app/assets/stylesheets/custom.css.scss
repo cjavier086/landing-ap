@@ -292,7 +292,7 @@ position:absolute;
 
 .cont-bkgr{
   width: 100vw;
-  height: 62%;
+  height: 70%;
   background-color: clear;
   margin: auto;
     top:0;bottom:0;
@@ -307,7 +307,6 @@ position:absolute;
     height: 30%; /* ratio = 9/16 * 90 = 50.625  0.38* 90*/
   max-height: 50%;
     max-width: 200%; /* 16/9 * 90 = 160  2.60 * 90 */
-    margin-top: 250px;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
@@ -316,14 +315,15 @@ position:absolute;
 .cont-form {
   background-size: 100% 100%;
   width: 100vw;
-  height: 38%;
+  height: 30%;
   background-color:$gray;
-  margin-top: -20px;
+  margin-top: 0px;
     top:0;bottom:0;
     left:0;right:0;
 }
 
 .cont-label {
+padding-top:12px;
   h1 {
     color: white;
     text-align: center;
@@ -333,16 +333,17 @@ position:absolute;
 }
 
 .cont-input {
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .share {
-  margin-bottom: -50px;
+margin-top: -20px;
+  margin-bottom: 0px;
   h2 {
     color:white;
     text-align:center;
-    font-size:1.0em;
+    font-size:1.2em;
     font-family: 'CaviarDreams';
   }
 }
@@ -581,6 +582,7 @@ input {
    background-color:#0074E7;
    font-family: 'CaviarDreams';
    margin-top:15px;
+   width:100%
   }
 
   .navbarpost {
@@ -637,4 +639,17 @@ input {
       display:block;
 }
 
+.contact-inputs {
+  width: 100%;
+  text-align: center;
+}
 
+.contact-row {
+  width: 24%;
+  display: inline-block;
+}
+
+.contact-button {
+  width: 5%;
+display: inline-block;
+}
