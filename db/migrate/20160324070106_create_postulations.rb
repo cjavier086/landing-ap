@@ -5,7 +5,6 @@ class CreatePostulations < ActiveRecord::Migration
       t.string :email
       t.string :lastName
       t.string :phone
-      t.boolean :owner, default: true
 
       t.timestamps null: false
     end
