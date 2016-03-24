@@ -27,7 +27,7 @@
     <%= f.text_field :phone, :placeholder => "celular", class: "form-control" %>
   </div>
   <div class="radio">
-      <label class="radio-label"><%= f.radio_button :owner , :checked => true , :value => false%> Soy conductor propietario.<label>
+      <label class="radio-label"><%= f.radio_button :owner , :checked => true , :value => false, class: 'radio-post'%> Soy conductor propietario.<label>
   </div>
   <div class="radio">
        <label class="radio-label"><%= f.radio_button :owner, :value => true%> Tengo conductores a cargo.</label>
