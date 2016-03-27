@@ -335,6 +335,7 @@ body {
 }
 
 .cont-text {
+margin-top:200px;
     background-image: image-url('contact_text.png');
   background-size: 100% 100%;
   width: 100%; /* 90% of viewport vidth */
@@ -357,7 +358,7 @@ body {
 }
 
 .cont-label {
-padding-top:12px;
+padding-top:10px;
   h1 {
     color: white;
     text-align: center;
