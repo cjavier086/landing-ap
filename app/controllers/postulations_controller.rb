@@ -27,6 +27,7 @@ class PostulationsController < ApplicationController
     @postulation = Postulation.new(postulation_params)
 
       if @postulation.save
+        PostulationMailer.get_postulation(@postulation).deliver
         redirect_to '/postulation'
        
       else

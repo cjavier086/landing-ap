@@ -1,0 +1,11 @@
+Datos del Postulante:
+<br></br><br></br>
+Nombre: <%=@postulation.name%>
+<br></br> 
+Apellidos: <%=@postulation.lastName%>
+<br></br> 
+Correo: <%=@postulation.email%>
+<br></br>
+Teléfono: <%=@postulation.phone%>
+<br></br>
+<%= @postulation.owner ? "Es conductor propietario." : "Tiene conductores a cargo." %>
