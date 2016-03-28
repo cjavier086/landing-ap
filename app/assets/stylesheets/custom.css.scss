@@ -692,3 +692,114 @@ input {
   width: 5%;
 display: inline-block;
 }
+
+.top-message {
+  margin-top: 50px;
+  h1 {
+    color: white;
+      font-family: 'CaviarDreams';
+      font-size: 25px;
+      text-align:center;
+      margin-right: 80px;
+      margin-left:80px;
+      margin-top: 70px;
+  }
+}
+
+.bottom-message {
+  margin-bottom: 0px;
+  width: 100%;
+  position: absolute;
+    bottom: 0;
+      h1 {
+  color: white;
+      font-family: 'CaviarDreams';
+      font-size: 45px;
+      text-align:center;
+      margin-right: 80px;
+      margin-left:80px;
+      margin-bottom: 20px;
+      font-weight:bold;
+  }
+}
+
+.driver-section {
+ height: 30%;
+ position:relative;
+}
+
+.driver-image {
+display: inline-block;
+  width: 15%;
+  height: 100%;
+  position:relative;
+}
+
+.driver-text {
+  width: 40%;
+  display: inline-block;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 15%;
+    position: absolute;
+    top:0;bottom:0;
+    left:0;right:0;
+  h1 {
+  color: #2B7FDE;
+      font-family: 'CaviarDreams';
+      font-size: 22px;
+      text-align:left;
+  }
+  h2 {
+  color: $gray;
+      font-family: 'CaviarDreams';
+      font-size: 16px;
+      text-align:left;
+      margin-top:-20px;
+  }
+}
+
+.driver-info-image {
+width:50%;
+height:50%;
+ margin: auto;
+    position: absolute;
+    top:0;bottom:0;
+    left:0;right:0;
+}
+
+.driver-info {
+  margin-left: -15px;
+}
+
+.main-driver {
+ 
+  height: 100%;
+  width: 100%;
+}
+
+.center-driver-text {
+height:80%;
+width:100%;
+  margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    position: absolute;
+    top:0;bottom:0;
+    left:0;right:0;
+}
+
+.center-main-driver {
+  height:80%;
+  padding-top:45px;
+width:100%;
+  margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    position: absolute;
+    top:0;bottom:0;
+    left:0;right:0;
+}
