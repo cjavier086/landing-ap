@@ -50,10 +50,11 @@ body {
   font-style: normal;
   font-variant: normal;
   font-size:15px;
+  font-weight:bold;
 }
 
 .but-head{
-  padding: 0;
+  padding: 10px 21px;
   border-radius: 24px;   
   font-family: 'CaviarDreams';
   font-style: normal;
@@ -62,6 +63,16 @@ body {
   background-color: #ff0066;
   border: 0;
   width: 140px;
+  right:8px;
+  height:40px;
+  margin-top:5px;
+
+  a:link{
+    margin-top:-6px;
+
+  }
+
+
 }
 
 .reg-but{
@@ -124,7 +135,7 @@ body {
 }
 
 .img-main{
-  margin-top:-85%;
+  margin-top:-44%;
   
   position:absolute;
   opacity:0.7;
@@ -135,7 +146,7 @@ body {
 }
 
 .img-name{
- margin-top:-69%;
+ margin-top:-35%;
   
   position:absolute;
   opacity:0.7;
@@ -151,7 +162,7 @@ body {
   font-size:18px;
   font-family:'CaviarDreams'; 
   text-align:center;
-  margin-top:-59%;
+  margin-top:-30%;
   
   opacity:0.7; 
   left: 0;
@@ -422,6 +433,10 @@ a:visited {
   display:inline-block;
 
   font-size:15px;
+}
+.navbar-inverse .navbar-nav > li >a:link{
+  color:white;
+  
 }
 
 .navbar ul{
