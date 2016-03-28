@@ -69,8 +69,17 @@ body {
 
   a:link{
     margin-top:-6px;
+    color:white;
 
   }
+}
+
+#login {
+  
+}
+
+#sign{
+  
 }
 
 .reg-but{
@@ -472,9 +481,13 @@ a:visited {
 
   font-size:15px;
 }
-.navbar-nav > li >a:link{
+
+.navbar-nav > #login >a:link{
   color:white;
-  
+}
+
+.navbar-nav > #sign >a:link{
+  color:white;
 }
 
 .navbar ul{
