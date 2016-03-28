@@ -27,10 +27,10 @@
     <%= f.text_field :phone, :placeholder => "celular", class: "form-control" %>
   </div>
   <div class="radio">
-      <label class="radio-label"><%= f.radio_button :owner , :checked => true , :value => false, class: 'radio-post'%> Soy conductor propietario.<label>
+      <label class="radio-label"><%= f.radio_button :owner, :value => true, class: 'radio-post'%> Soy conductor propietario.<label>
   </div>
   <div class="radio">
-       <label class="radio-label"><%= f.radio_button :owner, :value => true%> Tengo conductores a cargo.</label>
+       <label class="radio-label"><%= f.radio_button :owner, :value => false%> Tengo conductores a cargo.</label>
   </div>
 
   <div class="form-group">
