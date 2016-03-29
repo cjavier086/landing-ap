@@ -56,7 +56,7 @@ body {
 
 .but-head{
   padding: 10px 21px;
-  border-radius: 10px;   
+  border-radius: 6px;   
   font-family: 'CaviarDreams';
   font-style: normal;
   font-variant: normal;
@@ -91,7 +91,7 @@ body {
   right: 0;
   margin-right: auto;
   margin-left: auto;
-  font-size:24px;
+  font-size:18px;
   opacity:0.8;
   list-style:none;
   height:55px;
@@ -189,7 +189,7 @@ body {
 .mov-slogan{
   position:absolute;
   color:white;
-  font-size:24px;
+  font-size:30px;
   font-family:'CaviarDreams'; 
   text-align:center;
   margin-top:-24%;
@@ -487,10 +487,18 @@ a:visited {
 .navbar-nav > #login >a:link{
   color:white;
 }
+.navbar-nav > #login >a:hover{
+  color:white;
+}
+
 
 .navbar-nav > #sign >a:link{
   color:white;
 }
+.navbar-nav > #sign >a:hover{
+  color:white;
+}
+
 
 .navbar ul{
   text-align: center;
