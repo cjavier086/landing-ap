@@ -786,7 +786,7 @@ display: inline-block;
 }
 
 .driver-section {
- height: 30%;
+ height: 32%;
  position:relative;
 }
 
@@ -810,14 +810,15 @@ display: inline-block;
   h1 {
   color: #2B7FDE;
       font-family: 'CaviarDreams';
-      font-size: 22px;
+      font-size: 26px;
       text-align:left;
+      margin-top:10px;
       
   }
   h2 {
   color: $gray;
       font-family: 'CaviarDreams';
-      font-size: 16px;
+      font-size: 20px;
       text-align:left;
       margin-top:-20px;
   }
@@ -848,15 +849,15 @@ width:100%;
   margin-top: auto;
     margin-right: auto;
     margin-bottom: auto;
-    margin-left: 0px;
+    margin-left: 30px;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
 }
 
 .center-main-driver {
-  height:80%;
-  padding-top:45px;
+  height:90%;
+  padding-top:55px;
 width:100%;
   margin-top: auto;
     margin-right: auto;
