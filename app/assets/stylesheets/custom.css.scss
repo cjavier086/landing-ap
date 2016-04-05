@@ -500,6 +500,34 @@ a:visited {
   top:-6px;
 }
 
+.navbar-nav > #what >a:link{
+  color:#ff0066;
+}
+
+.navbar-nav > #what >a:hover{
+  color:#ff0066;
+}
+
+.navbar-nav > #what >a:active{
+  color:#ff0066;
+}
+
+.navbar-nav > #como >a:link{
+  color:#660066;
+}
+
+.navbar-nav > #como >a:hover{
+  color:#660066;
+}
+
+.navbar-nav > #ben >a:link{
+  color:#0000cc;
+}
+
+.navbar-nav > #ben >a:hover{
+  color:#0000cc;
+}
+
 
 .navbar-nav > #sign >a:link{
   color:white;
@@ -808,6 +836,7 @@ display: inline-block;
   width: 15%;
   height: 100%;
   position:relative;
+  margin-top:-12px;
 }
 
 .driver-text {
@@ -844,6 +873,7 @@ height:50%;
     position: absolute;
     top:0;bottom:0;
     left:0;right:0;
+    margin-left:70px;
 }
 
 .driver-info {
