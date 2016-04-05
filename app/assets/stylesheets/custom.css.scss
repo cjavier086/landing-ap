@@ -220,16 +220,65 @@ body {
 
 .about-text {
     width:68vw;
-  background-image: image-url('about_text.png');
+  
   background-size: 100% 100%;
     height: 53vh;
   max-width: 78vh;
   max-height: 62vw;
-  
-  margin:auto;
+    
   position: absolute;
   top:0;bottom:0;
   left:0;right:0;
+  h1 {
+    color:#ff0066;
+    text-align: left;
+    font-size: 2.0em;
+    font-family: 'CaviarDreams';
+    font-weight: bolder;
+    margin-top: 140px;
+    margin-left: 51px;
+  }
+  h2 {
+    color:#777;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.4em; 
+    margin-left:51px;
+    font-family: 'CaviarDreams';
+    }
+
+  p{
+    font-size: 1.1em;
+    font-family: 'CaviarDreams';
+    margin-top: 30px;
+    margin-bottom: -50px;
+    margin-left: 260px;
+  }
+  h3{
+    color:#777;
+    font-family: 'CaviarDreams';
+    font-size: 1.4em;
+    border-top-width:1px;
+    border-top-color:#ff0066;
+    border-top-style: solid;
+    border-bottom-width:1px;
+    border-bottom-color:#ff0066;
+    border-bottom-style: solid;
+    border-left-width:1px;
+    border-left-color:#ff0066;
+    border-left-style: solid;
+    border-right-width:1px;
+    border-right-color:#ff0066;
+    border-right-style: solid;
+    margin-left:51px;
+    line-height:30px;
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    margin-top:75px;
+    
+  }
 }
 
 .edit-button {
