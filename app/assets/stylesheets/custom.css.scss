@@ -36,6 +36,32 @@ body {
   
 }
 
+legend { 
+  display: block;
+  padding-left: 2px;
+  padding-right: 20px;
+  border: none;
+  font-family: 'CaviarDreams';
+  width:220px;
+  color:#d7006e;
+  
+  font-weight:bold;
+
+
+}
+fieldset{
+  border:#d7006e 1px solid;
+  font-family: 'CaviarDreams';
+  font-size:21px;
+  padding-left:10px;
+  line-height:35px;
+  text-align:right;
+  color:#777;
+  padding-bottom:45px;
+  padding-right:10px;
+
+}
+
 .main {
   background: -webkit-linear-gradient(top, rgba(229,225,222,1) 0%, rgba(255,255,255,1) 100%);
   width: 100vw;
@@ -230,7 +256,7 @@ body {
   top:0;bottom:0;
   left:0;right:0;
   h1 {
-    color:#ff0066;
+    color:#d7006e;
     text-align: left;
     font-size: 2.0em;
     font-family: 'CaviarDreams';
@@ -252,7 +278,7 @@ body {
     font-family: 'CaviarDreams';
     margin-top: 30px;
     margin-bottom: -50px;
-    margin-left: 260px;
+    margin-left: 250px;
   }
   h3{
     color:#777;
