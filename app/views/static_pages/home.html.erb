@@ -4,7 +4,7 @@
 
 <div class="row section">
 	<div class="abc" id="video">
-		<%= video_tag "videolanding.ogv" , :autoplay => true, :muted => true, :loop => true, class:"fullscreen-bg__video" %>
+		<%= video_tag "videoLanding.ogv" , :autoplay => true, :muted => true, :loop => true, class:"fullscreen-bg__video" %>
 		<%= image_tag("lam.png", alt: "Imagen de noticia",:class => "img-main bar fadeInUp", size:"213x123")%>
 		<%= image_tag("movivan.png", alt: "Imagen de noticia",:class => "img-name bar fadeInUp", size:"232x42")%>
 		<p class="page-slogan bar fadeInUp">
@@ -121,10 +121,18 @@
 </div>
 
 <div class="section">
-<div class="contact"  id="contact" style="margin-top:50px;">
+<div class="contact"  id="contact">
 	<div class="cont-bkgr">
-		<div class="cont-text"></div>
+		<div class="cont-text">
+			<u style="font-size:1.5em;">Contacto </u><br>
+			<p>Escríbenos a <b>movivan.peru@outlook.com</b> y con gusto nos contactaremos contigo</p>
+		</div>
+		<div class="cont-text" >
+			<u style="font-size:1.5em;">Carreras </u><br>
+			<p style="width:50%;">En Movivan nos mueve la pasión por la tecnología y la innovación y estamos en busca de talentos como tú para diversas disciplinas</p>
+		</div>
 	</div>
+	
 	<div class="cont-form bar bounce" >
 		<div class="cont-input"><%= render '/contacts/form' %></div>
 	</div>
