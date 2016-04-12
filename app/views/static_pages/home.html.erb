@@ -163,11 +163,61 @@
 <script >
 	$(document).ready(function() {
   	// Changing the defaults
-window.sr = ScrollReveal({ reset: true });
+	window.sr = ScrollReveal({ reset: true });
 
 // Customizing a reveal set
-sr.reveal('.bar', { distance: '200px', useDelay: 'once', delay: 250 });
+	sr.reveal('.bar', { distance: '200px', useDelay: 'once', delay: 250 });
+	var scroll_pos = 0;
+    var animation_begin_pos = 0; //where you want the animation to begin
+    var animation_end_pos = 5000; //where you want the animation to stop
+    
+    $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop(); 
+        if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos ) { 
+           // console.log( 'scrolling and animating' );
+            //we want to calculate the relevant transitional rgb value
+            if(scroll_pos >= 0 && scroll_pos <= 1365){
+            	document.getElementById('login').style.backgroundColor = "#d7006e";
+            	document.getElementById('sign').style.backgroundColor = "#d7006e";
+            	document.getElementById('cont').style.borderRight = "solid 1px #d7006e"
+            	document.getElementById('whatlink').style.color = "#d7006e";
+            	document.getElementById('howlink').style.color = '#777'
+            	document.getElementById('benlink').style.color = '#777'; 
+            	document.getElementById('contlink').style.color = '#777'
+            }
+            else if(scroll_pos >= 1366 && scroll_pos <=4097){
+            	document.getElementById('login').style.backgroundColor = "#693b7b"; 
+            	document.getElementById('sign').style.backgroundColor = "#693b7b"; 
+            	document.getElementById('cont').style.borderRight = "solid 1px #693b7b"; 
+            	document.getElementById('howlink').style.color = "#693b7b";
+            	document.getElementById('whatlink').style.color = '#777'; 
+            	document.getElementById('benlink').style.color = '#777'; 
+            	document.getElementById('contlink').style.color = '#777';
+            }
 
+            else if(scroll_pos >= 4098 && scroll_pos <=4780){
+            	document.getElementById('login').style.backgroundColor = "#0074e6"; 
+            	document.getElementById('sign').style.backgroundColor = "#0074e6"; 
+            	document.getElementById('cont').style.borderRight = "solid 1px #0074e6";
+            	document.getElementById('benlink').style.color = "#0074e6";
+            	document.getElementById('whatlink').style.color = '#777'; 
+            	document.getElementById('howlink').style.color = '#777';
+            	document.getElementById('contlink').style.color = '#777';
+
+            }
+
+            else if(scroll_pos >= 4781){
+            	document.getElementById('login').style.backgroundColor = "#693b7b"; 
+            	document.getElementById('sign').style.backgroundColor = "#693b7b"; 
+            	document.getElementById('cont').style.borderRight = "solid 1px #693b7b"; 
+            	document.getElementById('contlink').style.color = "#693b7b";
+            	document.getElementById('whatlink').style.color = '#777'; 
+            	document.getElementById('howlink').style.color = '#777';
+            	document.getElementById('benlink').style.color = '#777';
+            }
+        }
+           
+    });
 });
 </script>
 
