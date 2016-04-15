@@ -14,7 +14,7 @@
 		</div>
 	</div>
 </div>
-<div class="how section">
+<div class="how section bar">
 	<div class=" main driver-info">
 		<div class="main-driver">
 		<div class="center-main-driver">
@@ -61,3 +61,12 @@
 		</div>
 	</div>
 </div>
+<script >
+	$(document).ready(function() {
+  	// Changing the defaults
+	window.sr = ScrollReveal({ reset: true });
+
+// Customizing a reveal set
+	sr.reveal('.bar', { distance: '200px', useDelay: 'once', delay: 250 });
+});
+</script>

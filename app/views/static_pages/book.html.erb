@@ -1,11 +1,11 @@
 <% provide(:title, 'Reclamaciones') %>
 <div class="book-row">
-	<li class="li-head" style="margin-top:-4px;">
-        <%= link_to image_tag("logo.png", alt: "Imagen del Curso", size:"300x60"), "#video"%>
+	<li class="li-head" style="margin-top:-4px;margin-left:30px;">
+        <%= link_to image_tag("logo.png", alt: "Imagen del Curso", size:"200x40"), "#video"%>
     </li>
     <div class="book-desc">
-    	Libro de Reclamaciones (Ley 29571) <br>
-    	Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, la página web de Movivan cuenta con <b>un</b> Libro de Reclamaciones a su disposición. Ingrese a la opción que sea de su interés para registras su queja o reclamo.
+    	<b>Libro de Reclamaciones (Ley 29571)</b> <br><br>
+    	Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, la página web de Movivan cuenta con un Libro de Reclamaciones a su disposición. Ingrese a la opción que sea de su interés para registras su queja o reclamo.
     </div>
 
     <div class="book-data">
@@ -13,7 +13,7 @@
     	<select style="margin-top:20px;">
     		<option>Tipo de Documento</option>
     		<option>DNI</option>
-    		<option>RUC</option>
+    		<option>Carnet de Extranjería</option>
     	</select><br>
     	<input type="text" value="Número de Documento" style="color:gray;">
     	<input type="text" value="Nombres" style="color:gray;">
@@ -24,13 +24,13 @@
     	La respuesta llegará al correo electrónico que nos proporcione.
     </div>
 
-    <div class="book-data">
-    	Tipo de Reclamación <br>
-    	<input type="radio" value="reclamo" style="display:inline;">Reclamo <br><br>
+    <div class="book-data" style="margin-left:-30px;">
+    	<b>Tipo de Reclamación </b><br><br>
+    	<input type="radio" value="reclamo" style="display:inline;" class="radio-post">Reclamo <br><br>
     	<input type="radio" value="queja" style="display:inline;">Queja <br><br>
 
     	Detalle del Reclamo (Max: 500 caracteres)
-    	<textarea rows="8" cols="50">
+    	<textarea rows="8" cols="70">
     	</textarea><br><br>
     	<input type="button" value="Enviar">
     </div>
