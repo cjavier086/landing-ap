@@ -28,7 +28,7 @@
 		<div class="how-main" style="margin-top:75px;">
 			<div class="about-bkgr">
 				<div class="video-container">
-                        <div class="video" style="margin-left:47px;">
+                        <div class="video">
                             <iframe width="580" height="360" src="https://www.youtube.com/embed/who5eJU7KQo" frameborder="0"></iframe>
                         </div>
 
@@ -125,7 +125,7 @@
 	<div class="cont-bkgr">
 		<div class="cont-text" style="margin-left:5%;">
 			<u style="font-size:1.5em;">Contacto </u><br>
-			<p><b>movivan.peru@outlook.com</b></p>
+			<p>Escríbenos a <b>movivan.peru@outlook.com</b> y con gusto nos contactaremos contigo a la brevedad.</p>
 		</div>
 		<div class="cont-text" style="margin-left:-13%;">
 			<u style="font-size:1.5em;">Carreras </u><br>
@@ -170,16 +170,13 @@
 	var scroll_pos = 0;
     var animation_begin_pos = 0; //where you want the animation to begin
     var animation_end_pos = 5000; //where you want the animation to stop
-    var factor=0;
-    var tamDiv=$(window).height()+15;
     
+    var tamDiv=$(window).height()+15;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop(); 
 
         factor=tamDiv/screen.height;
-        if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos ) { 
-            
-            //we want to calculate the relevant transitional rgb value
+        //we want to calculate the relevant transitional rgb value
             if(scroll_pos >= 0 && scroll_pos < 2*(tamDiv)){
             	document.getElementById('login').style.backgroundColor = "#d7006e";
             	document.getElementById('sign').style.backgroundColor = "#d7006e";
@@ -219,9 +216,10 @@
             	document.getElementById('howlink').style.color = '#777';
             	document.getElementById('benlink').style.color = '#777';
             }
-        }
+        
            
     });
 });
 </script>
+
 

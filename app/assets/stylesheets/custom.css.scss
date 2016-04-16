@@ -54,12 +54,11 @@ fieldset{
   border:#d7006e 1px solid;
   font-family: 'CaviarDreams';
   font-size:21px;
-  padding-left:10px;
   line-height:35px;
   text-align:right;
   color:#777;
   padding-bottom:45px;
-  padding-right:15px;
+  padding-right:25px;
 
 }
 
@@ -88,7 +87,7 @@ fieldset{
   font-style: normal;
   font-variant: normal;
   color:white;
-  background-color: #d7006e;
+  
   border: 0;
   width: 140px;
   right:8px;
@@ -101,6 +100,7 @@ fieldset{
 
   }
 }
+
 
 .reg-but{
   padding: 10px 21px;
@@ -243,6 +243,8 @@ fieldset{
   position: absolute;
   top:0;bottom:0;
   left:0;right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-text {
@@ -258,19 +260,19 @@ fieldset{
   left:0;right:0;
   h1 {
     color:#d7006e;
-    text-align: left;
+    text-align: center;
     font-size: 2.0em;
     font-family: 'CaviarDreams';
     font-weight: bolder;
     margin-top: 140px;
-    margin-left: 18%;
+    
   }
   h2 {
     color:#777;
     margin-top: 20px;
     text-align: left;
     font-size: 1.4em; 
-    margin-left:-20px;
+    
     font-family: 'CaviarDreams';
     }
 
@@ -464,7 +466,6 @@ fieldset{
 }
 .book-desc{
   margin-top:35px;
-  margin-left:30px;
   width:100vw;
   font-family: 'CaviarDreams';
   font-size: 17px; 
@@ -477,7 +478,6 @@ fieldset{
   font-family: 'CaviarDreams';
   font-size: 17px; 
   margin-top:20px;
-  margin-left:30px;
 }
 
 .cont-text {
@@ -567,6 +567,9 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 }
+a{
+  color:white;
+}
 
 a:link{
     color: black;
@@ -584,10 +587,7 @@ a:visited {
   border:0px;
 }
 
-.navbar-inverse .navbar-nav > li >a:hover{
-  color: #777;
 
-}
 
 .navbar-inverse .navbar-nav > li{
   padding: 2px;
@@ -597,29 +597,30 @@ a:visited {
   font-size:15px;
 }
 
-.navbar-nav > #login >a:link{
+.navbar-inverse .navbar-nav > #login >a:link{
   color:white;
 }
-.navbar-nav > #login >a:hover{
+.navbar-inverse .navbar-nav > #login >a:hover{
   color:white;
 }
 
-.navbar-nav > #login >a:visited{
+.navbar-inverse .navbar-nav > #login >a{
   color:white;
 }
+
 
 .navbar-nav > #cont >a:link{
   top:-6px;
 }
 
-.navbar-nav > #sign >a:link{
+.navbar-inverse .navbar-nav > #sign >a:link{
   color:white;
 }
-.navbar-nav > #sign >a:hover{
+.navbar-inverse .navbar-nav > #sign >a:hover{
   color:white;
 }
 
-.navbar-nav > #sign >a:visited{
+.navbar-inverse .navbar-nav > #sign >a:visited{
   color:white;
 }
 
