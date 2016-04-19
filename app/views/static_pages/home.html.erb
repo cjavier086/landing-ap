@@ -192,9 +192,7 @@
     var tamDiv=$(window).height()-15;
     $(document).scroll(function() {
         scroll_pos = $(this).scrollTop(); 
-
-        
-        //we want to calculate the relevant transitional rgb value
+       //we want to calculate the relevant transitional rgb value
             if(scroll_pos >= 0 && scroll_pos < 2*(tamDiv)){
             	document.getElementById('login').style.backgroundColor = "#d7006e";
             	document.getElementById('sign').style.backgroundColor = "#d7006e";
