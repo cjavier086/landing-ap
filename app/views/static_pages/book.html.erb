@@ -12,14 +12,14 @@
     	Datos de la persona que presenta el reclamo <br>
     	<select style="margin-top:20px;width:250px; margin-bottom: -2px;">
     		<option>Tipo de Documento</option>
-    		<option>DNI</option>
-    		<option>Carnet de Extranjería</option>
+    		<option value="1">DNI</option>
+    		<option value="2">Carnet de Extranjería</option>
     	</select><br>
-    	<input type="text" value="Número de Documento" style="color:gray;width:250px;">
-    	<input type="text" value="Nombres" style="color:gray;width:250px;">
-    	<input type="text" value="Apellido Paterno" style="color:gray;width:250px;">
-    	<input type="text" value="Apellido Materno" style="color:gray;width:250px;">
-    	<input type="text" value="Email" style="color:gray;width:250px;">
+    	<input type="text" value="Número de Documento" id="numDoc" style="color:gray;width:250px;">
+    	<input type="text" value="Nombres" id="name" style="color:gray;width:250px;">
+    	<input type="text" value="Apellido Paterno" id="apPat" style="color:gray;width:250px;">
+    	<input type="text" value="Apellido Materno" id="apMat" style="color:gray;width:250px;">
+    	<input type="text" value="Email" id="email" style="color:gray;width:250px;">
 
     	La respuesta llegará al correo electrónico que nos proporcione.
     </div>
@@ -30,13 +30,12 @@
     	<input type="radio" value="queja" style="display:inline;">Queja <br><br>
 
     	Detalle del Reclamo (Max: 500 caracteres)
-    	<textarea rows="8" cols="70">
+    	<textarea rows="8" cols="70" id="myText">
     	</textarea><br><br>
-    	<input type="button" value="Enviar">
+    	<input type="button" value="Enviar" onclick="sendEmail()">
     </div>
-    
-    
-
 </div>
+
+
 
 	  
