@@ -1,0 +1,40 @@
+<%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="book-data">
+      Datos de la persona que presenta el reclamo <br>
+      <select style="margin-top:20px;width:250px; margin-bottom: -2px;">
+        <option>Tipo de Documento</option>
+        <option value="1">DNI</option>
+        <option value="2">Carnet de Extranjería</option>
+      </select><br>
+      <input type="text" value="Número de Documento" id="numDoc" style="color:gray;width:250px;">
+      <input type="text" value="Nombres" id="name" style="color:gray;width:250px;">
+      <input type="text" value="Apellido Paterno" id="apPat" style="color:gray;width:250px;">
+      <input type="text" value="Apellido Materno" id="apMat" style="color:gray;width:250px;">
+      <input type="text" value="Email" id="email" style="color:gray;width:250px;">
+
+      La respuesta llegará al correo electrónico que nos proporcione.
+    </div>
+
+    <div class="book-data" style="margin-left:-30px;">
+      <b>Tipo de Reclamación </b><br><br>
+      <input type="radio" value="reclamo" style="display:inline;" class="radio-post">Reclamo <br><br>
+      <input type="radio" value="queja" style="display:inline;">Queja <br><br>
+
+      Detalle del Reclamo (Max: 500 caracteres)
+      <textarea rows="8" cols="70" id="myText">
+      </textarea><br><br>
+      <input type="button" value="Enviar" onclick="sendEmail()">
+    </div>
+<% end %>
