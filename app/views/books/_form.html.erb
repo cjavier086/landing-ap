@@ -1,4 +1,4 @@
-<%= form_for(@book) do |f| %>
+<%= form_for(@book == nil ? (@book = Book.new ) : @book) do |f| %>
   <% if @book.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
@@ -11,18 +11,26 @@
     </div>
   <% end %>
 
-  <div class="book-data">
+  <li class="li-head" style="margin-top:-4px;margin-left:30px;">
+        <%= link_to image_tag("logo.png", alt: "Imagen del Curso", size:"200x40"), "#video"%>
+    </li>
+    <div class="book-desc">
+      <b>Libro de Reclamaciones (Ley 29571)</b> <br><br>
+      Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, la página web de Movivan cuenta con un Libro de Reclamaciones a su disposición. Ingrese a la opción que sea de su interés para registras su queja o reclamo.
+    </div>
+
+    <div class="book-data">
       Datos de la persona que presenta el reclamo <br>
       <select style="margin-top:20px;width:250px; margin-bottom: -2px;">
         <option>Tipo de Documento</option>
         <option value="1">DNI</option>
         <option value="2">Carnet de Extranjería</option>
       </select><br>
-      <input type="text" value="Número de Documento" id="numDoc" style="color:gray;width:250px;">
-      <input type="text" value="Nombres" id="name" style="color:gray;width:250px;">
-      <input type="text" value="Apellido Paterno" id="apPat" style="color:gray;width:250px;">
-      <input type="text" value="Apellido Materno" id="apMat" style="color:gray;width:250px;">
-      <input type="text" value="Email" id="email" style="color:gray;width:250px;">
+      <input type="text" placeholder="Número de Documento" id="numDoc" style="color:gray;width:250px;">
+      <%= f.text_field :name, :placeholder => "Nombres", style: "color:gray;width:250px;" %>
+      <%= f.text_field :lastname, :placeholder => "apPat", style: "color:gray;width:250px;" %>
+      <input type="text" placeholder="Apellido Materno" id="apMat" style="color:gray;width:250px;">
+      <%= f.text_field :email, :placeholder => "Email", style: "color:gray;width:250px;" %>
 
       La respuesta llegará al correo electrónico que nos proporcione.
     </div>
@@ -30,11 +38,17 @@
     <div class="book-data" style="margin-left:-30px;">
       <b>Tipo de Reclamación </b><br><br>
       <input type="radio" value="reclamo" style="display:inline;" class="radio-post">Reclamo <br><br>
-      <input type="radio" value="queja" style="display:inline;">Queja <br><br>
+      <input type="radio" value="queja" style="display:inline;" class="radio-post">Queja <br><br>
 
       Detalle del Reclamo (Max: 500 caracteres)
-      <textarea rows="8" cols="70" id="myText">
-      </textarea><br><br>
-      <input type="button" value="Enviar" onclick="sendEmail()">
+      <%= f.text_area :content, :placeholder => "Contenido", size: "70x8" %>
+      <%= submit_tag("Enviar", disable_with: "Enviando", class: "btn btn-edit send")%>
     </div>
 <% end %>
+
+
+<script>
+$('.radio-post').click(function() {
+    $(this).siblings('input:radio').prop('checked', false);
+});
+</script>

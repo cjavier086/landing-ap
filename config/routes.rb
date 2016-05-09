@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
   get 'contacts' => 'contacts#new'
   get 'book' => 'static_pages#book'
+  get 'books' => 'books#new'
+  post 'books' => 'books#create'
   get 'politics' => 'static_pages#politics'
 
   resources :users
